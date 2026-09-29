@@ -9,6 +9,6 @@ public class HomeController {
 
     @RequestMapping("/")
     public @ResponseBody String greeting() {
-        return "Hello World";
+        return "Aplicación Spring Boot de Juan Carlos Ponce de León Ruiz";
     }
 }

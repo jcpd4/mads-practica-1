@@ -25,7 +25,8 @@ public class MockMvcTest {
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello World")));
+                .andExpect(
+                        content().string(containsString("Aplicación Spring Boot de Juan Carlos Ponce de León Ruiz")));
     }
 
     // Podemos hacer también una petición POST y pasar los datos
